@@ -29,6 +29,10 @@ jobs:
         with:
           node-version: '12'
           
+    
+      - run: npm install --save axios react-chartjs-2 react-countup classnames @material-ui/core chart.js
+    
+  
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
@@ -44,3 +48,5 @@ jobs:
       
       - name: Deploy To Surge
         run: surge ./build covid19tracker-reactapp.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      
+        
