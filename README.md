@@ -2,6 +2,8 @@
 
 This web app tracks the recent covid cases globally and country wise
 
+for a demo visit http://covid19tracker-reactapp.surge.sh
+
 # npm run
 run this command if you want to run the web app
 
